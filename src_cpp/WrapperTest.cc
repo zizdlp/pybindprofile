@@ -25,13 +25,17 @@ void TestWrapper(){
   auto right =dataOwner.get_array(arr_right);
   auto res =dataOwner.get_array(arr_res);
   left->set_value(3);
-  right->set_value(4);
+  right->set_value(7);
   res->set_value(5);
+  int loop=100;
   auto start_time=GetTimeStamp();
-  mul(left,right,res);
+  for(auto index=0;index<loop;++index){
+      mul(left,right,res);
+  }
+
   auto end_time=GetTimeStamp();
   // res->print_value();
-  std::cout<<"Wrapper Test with length:"<<length<<"mul time consume:"<<end_time-start_time<<"ms"<<std::endl;
+  std::cout<<"Wrapper Test with loop"<<loop<<";length:"<<length<<"mul time consume:"<<end_time-start_time<<"ms"<<std::endl;
   std::cout << "_________  TestWrapper passed ___________ \n";
 }
 int main() {

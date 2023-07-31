@@ -10,7 +10,9 @@ pybind_extension(
     name = "pybindc",  # This name is not actually created!
     srcs = ["pybindc.cpp"],
     deps = [
-        "//src_c:mul_c"
+        "//src_cpp:number_arr",
+        "//src_cpp:data_owner",
+        "//src_cpp:operation",
         ],
 )
 
