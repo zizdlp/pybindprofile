@@ -27,7 +27,7 @@ void TestLargeWrapper(){
   left->set_value(3);
   right->set_value(7);
   res->set_value(5);
-  int loop=10;
+  int loop=50;
   auto start_time=GetTimeStamp();
   for(auto index=0;index<loop;++index){
       mul(left,right,res);
@@ -56,7 +56,7 @@ void TestSmallWrapper(){
   left->set_value(3);
   right->set_value(7);
   res->set_value(5);
-  int loop=100000;
+  int loop=500000;
   auto start_time=GetTimeStamp();
   for(auto index=0;index<loop;++index){
       mul(left,right,res);

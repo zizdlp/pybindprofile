@@ -20,5 +20,4 @@ bazel run  src_cpp:wrapper_test
 ```shell
 bazel run src_pybind:run # python level time consume
 bazel run src_cpp:wrapper_test # cpp level time consume
-
 ```

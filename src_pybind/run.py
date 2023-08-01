@@ -24,7 +24,7 @@ def testLargeDataWrapper():
     dataWrapper.createData(length,"res")
     dataWrapper.setValue(3,"left")
     dataWrapper.setValue(7,"right")
-    loop=10
+    loop=50
     start_time=time.time()
     for i in range(loop):
         dataWrapper.mul_operation("left","right","res")
@@ -41,7 +41,7 @@ def testSmallDataWrapper():
     dataWrapper.createData(length,"res")
     dataWrapper.setValue(3,"left")
     dataWrapper.setValue(7,"right")
-    loop=100000
+    loop=500000
     start_time=time.time()
     for i in range(loop):
         dataWrapper.mul_operation("left","right","res")
